@@ -1,0 +1,28 @@
+{
+  "name": "typescript-test",
+  "version": "1.0.0",
+  "description": "TypeScriptでも勉強しようかなぁ～",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build:live",
+    "build": "tsc -p .",
+    "build:live": "nodemon --watch 'src/**/*.ts' --exec \"ts-node\" src/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RunqRun/TypeScript-Test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RunqRun/TypeScript-Test/issues"
+  },
+  "homepage": "https://github.com/RunqRun/TypeScript-Test#readme",
+  "dependencies": {
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
